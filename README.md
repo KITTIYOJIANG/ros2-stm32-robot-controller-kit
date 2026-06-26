@@ -106,6 +106,7 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Pricing Model](store/pricing.md)
 - [Shipping Matrix](store/shipping_matrix.csv)
 - [Fulfillment SOP](ops/fulfillment_sop.md)
+- [Factory Test Script](tools/factory_test.py)
 
 ## Safety And Compliance Notes
 

@@ -90,6 +90,7 @@ Exit criteria: the product has the assets required for a controlled small-batch 
 Target window: 2026-08-08 to 2026-08-21
 
 - [ ] Prepare 3 to 10 tested units
+- [x] Add factory test script skeleton
 - [ ] Run factory test on every unit
 - [ ] Invite beta users
 - [ ] Publish content to GitHub, YouTube, Reddit, and Hackaday
