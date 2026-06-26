@@ -52,7 +52,8 @@ Target window: 2026-07-15 to 2026-07-24
 - [x] Add motor driver interface
 - [ ] Productize full firmware structure
 - [ ] Add one-command build and flash flow
-- [ ] Add Python SDK
+- [x] Add Python SDK mock skeleton
+- [ ] Add Python SDK real serial validation
 - [ ] Add ROS2 package
 - [ ] Run one full end-to-end demo
 
