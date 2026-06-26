@@ -80,6 +80,8 @@ Planned hardware blocks:
 
 ## Software Overview
 
+The first firmware architecture draft lives in [docs/firmware_overview.md](docs/firmware_overview.md).
+
 Planned software blocks:
 
 - Firmware drivers for motors, IMU, encoders, and protocol handling
