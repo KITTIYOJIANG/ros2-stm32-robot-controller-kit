@@ -82,6 +82,7 @@ Planned hardware blocks:
 ## Software Overview
 
 The first firmware architecture draft lives in [docs/firmware_overview.md](docs/firmware_overview.md).
+The draft interface contract lives in [docs/api_reference.md](docs/api_reference.md).
 
 Planned software blocks:
 
@@ -93,6 +94,12 @@ Planned software blocks:
 ## Buy Link
 
 Not available yet. First public sales target: small-batch developer kits through Tindie after hardware, firmware, tests, documentation, and fulfillment checks are complete.
+
+## Product And Support Docs
+
+- [Datasheet](docs/datasheet.md)
+- [FAQ](docs/faq.md)
+- [Shipping and Returns](docs/shipping_and_returns.md)
 
 ## Safety And Compliance Notes
 

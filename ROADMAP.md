@@ -24,6 +24,9 @@ Target window: 2026-06-29 to 2026-07-05
 - [x] Add hardware overview document
 - [x] Add firmware overview document
 - [x] Add first troubleshooting draft
+- [x] Add API reference draft
+- [x] Add FAQ draft
+- [x] Add shipping and returns draft
 - [ ] Add initial demo GIF or screen recording
 
 Exit criteria: an overseas developer would be willing to star or watch the repository.
@@ -56,7 +59,8 @@ Exit criteria: a developer can control the board from code and reproduce at leas
 
 Target window: 2026-07-25 to 2026-08-01
 
-- [ ] Complete datasheet
+- [x] Draft datasheet
+- [ ] Complete datasheet with verified hardware values
 - [ ] Complete troubleshooting guide
 - [ ] Complete FAQ
 - [ ] Record three-minute YouTube demo
