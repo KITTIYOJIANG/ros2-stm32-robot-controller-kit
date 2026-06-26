@@ -54,6 +54,7 @@ ops/        Cost table, supplier list, order tracker, factory test logs
 ## Quick Start
 
 The first Quick Start draft lives in [docs/quick_start.md](docs/quick_start.md).
+Common setup and bring-up issues are tracked in [docs/troubleshooting.md](docs/troubleshooting.md).
 
 Current planned flow:
 
