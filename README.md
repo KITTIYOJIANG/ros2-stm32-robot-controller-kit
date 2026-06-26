@@ -82,6 +82,7 @@ Planned hardware blocks:
 ## Software Overview
 
 The first firmware architecture draft lives in [docs/firmware_overview.md](docs/firmware_overview.md).
+The firmware skeleton starts in [firmware/README.md](firmware/README.md).
 The draft interface contract lives in [docs/api_reference.md](docs/api_reference.md).
 
 Planned software blocks:
@@ -106,6 +107,7 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Pricing Model](store/pricing.md)
 - [Shipping Matrix](store/shipping_matrix.csv)
 - [Fulfillment SOP](ops/fulfillment_sop.md)
+- [Factory Test Script](tools/factory_test.py)
 
 ## Safety And Compliance Notes
 

@@ -169,7 +169,8 @@ Fail action:
 Planned command:
 
 ```bash
-python tools/factory_test.py --port /dev/ttyUSB0 --order ORDER-0001
+python tools/factory_test.py --mock --order ORDER-0001
+python tools/factory_test.py --port /dev/ttyUSB0 --order ORDER-0001 --enable-motion
 ```
 
 Minimum tests:

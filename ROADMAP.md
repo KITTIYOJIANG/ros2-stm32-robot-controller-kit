@@ -47,7 +47,10 @@ Exit criteria: the board is ready for prototype manufacturing review.
 
 Target window: 2026-07-15 to 2026-07-24
 
-- [ ] Productize firmware structure
+- [x] Add firmware version and error code headers
+- [x] Add firmware protocol skeleton
+- [x] Add motor driver interface
+- [ ] Productize full firmware structure
 - [ ] Add one-command build and flash flow
 - [ ] Add Python SDK
 - [ ] Add ROS2 package
@@ -90,6 +93,7 @@ Exit criteria: the product has the assets required for a controlled small-batch 
 Target window: 2026-08-08 to 2026-08-21
 
 - [ ] Prepare 3 to 10 tested units
+- [x] Add factory test script skeleton
 - [ ] Run factory test on every unit
 - [ ] Invite beta users
 - [ ] Publish content to GitHub, YouTube, Reddit, and Hackaday
