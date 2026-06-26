@@ -78,8 +78,10 @@ Target window: 2026-08-02 to 2026-08-07
 - [ ] Decide first-stage payment route
 - [x] Draft shipping matrix
 - [x] Draft pricing model
+- [x] Draft fulfillment SOP
 - [ ] Complete shipping matrix with verified carrier quotes
 - [ ] Complete pricing table with verified BOM and fees
+- [ ] Complete fulfillment SOP with real packing and test evidence
 
 Exit criteria: the product has the assets required for a controlled small-batch listing.
 
