@@ -1,0 +1,15 @@
+Country,Region,Shipping Provider,Service Level,Packed Weight (g),Shipping Cost (USD),Estimated Delivery Time,Tracking Available,Risk Level,Recommended Customer Shipping (USD),Shipping Margin (USD),Ship Or Block,Notes,Source URL,Last Verified
+United States,North America,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Large target market; verify tracked small parcel cost,TBD,TBD
+Canada,North America,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Verify customs and tracking reliability,TBD,TBD
+United Kingdom,Europe,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Verify VAT/import handling expectations,TBD,TBD
+Germany,Europe,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Important EU maker market; verify VAT/import expectations,TBD,TBD
+France,Europe,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Quote tracked parcel before enabling,TBD,TBD
+Netherlands,Europe,TBD,TBD,TBD,TBD,TBD,TBD,Low,TBD,TBD,Quote before enabling,Good EU logistics hub; still verify cost,TBD,TBD
+Australia,Oceania,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Verify delivery time and tracking,TBD,TBD
+Singapore,Asia,TBD,TBD,TBD,TBD,TBD,TBD,Low,TBD,TBD,Quote before enabling,Good first Asia test country,TBD,TBD
+Japan,Asia,TBD,TBD,TBD,TBD,TBD,TBD,Low,TBD,TBD,Quote before enabling,Good robotics market; verify address format,TBD,TBD
+South Korea,Asia,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Verify customs and tracking,TBD,TBD
+Hong Kong,Asia,TBD,TBD,TBD,TBD,TBD,TBD,Low,TBD,TBD,Quote before enabling,Nearby market; verify courier options,TBD,TBD
+Taiwan,Asia,TBD,TBD,TBD,TBD,TBD,TBD,Medium,TBD,TBD,Quote before enabling,Verify import and address requirements,TBD,TBD
+India,Asia,TBD,TBD,TBD,TBD,TBD,TBD,High,TBD,TBD,Block until verified,Customs and delivery risk need verification,TBD,TBD
+Brazil,South America,TBD,TBD,TBD,TBD,TBD,TBD,High,TBD,TBD,Block until verified,Customs and delivery risk need verification,TBD,TBD

@@ -76,8 +76,10 @@ Target window: 2026-08-02 to 2026-08-07
 - [ ] Draft Tindie listing
 - [ ] Draft Shopify product page
 - [ ] Decide first-stage payment route
-- [ ] Complete shipping matrix
-- [ ] Complete pricing table
+- [x] Draft shipping matrix
+- [x] Draft pricing model
+- [ ] Complete shipping matrix with verified carrier quotes
+- [ ] Complete pricing table with verified BOM and fees
 
 Exit criteria: the product has the assets required for a controlled small-batch listing.
 

@@ -101,6 +101,11 @@ Not available yet. First public sales target: small-batch developer kits through
 - [FAQ](docs/faq.md)
 - [Shipping and Returns](docs/shipping_and_returns.md)
 
+## Store Planning
+
+- [Pricing Model](store/pricing.md)
+- [Shipping Matrix](store/shipping_matrix.csv)
+
 ## Safety And Compliance Notes
 
 This is a developer kit for prototyping and education. It is not a certified consumer appliance. Do not claim CE or FCC certification until certification has been completed. Use it in a safe lab environment and avoid selling untested boards as ready stock.
