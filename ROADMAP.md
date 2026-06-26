@@ -1,0 +1,91 @@
+# Roadmap
+
+This roadmap turns a lab demo into a small-batch overseas hardware product.
+
+## Phase 0: Asset Setup
+
+Target window: 2026-06-26 to 2026-06-28
+
+- [x] Initialize productized repository structure
+- [x] Draft product README
+- [x] Draft Quick Start document
+- [x] Add Tindie listing placeholder
+- [x] Add YouTube demo script placeholder
+- [ ] Add task board
+- [ ] Add first demo image or GIF placeholder asset
+
+Exit criteria: an outside developer can understand what the project is, who it is for, and what will be delivered.
+
+## Phase 1: Engineering Product Page
+
+Target window: 2026-06-29 to 2026-07-05
+
+- [ ] Expand README with real demo evidence
+- [ ] Add hardware overview document
+- [ ] Add firmware overview document
+- [ ] Add first troubleshooting draft
+- [ ] Add initial demo GIF or screen recording
+
+Exit criteria: an overseas developer would be willing to star or watch the repository.
+
+## Phase 2: Hardware MVP
+
+Target window: 2026-07-06 to 2026-07-14
+
+- [ ] Export schematic PDF
+- [ ] Create internationalized BOM with MPNs
+- [ ] Finish PCB layout
+- [ ] Run DRC
+- [ ] Export Gerber, Pick and Place, and production BOM
+
+Exit criteria: the board is ready for prototype manufacturing review.
+
+## Phase 3: Software Experience
+
+Target window: 2026-07-15 to 2026-07-24
+
+- [ ] Productize firmware structure
+- [ ] Add one-command build and flash flow
+- [ ] Add Python SDK
+- [ ] Add ROS2 package
+- [ ] Run one full end-to-end demo
+
+Exit criteria: a developer can control the board from code and reproduce at least one demo.
+
+## Phase 4: English Documentation And Video
+
+Target window: 2026-07-25 to 2026-08-01
+
+- [ ] Complete datasheet
+- [ ] Complete troubleshooting guide
+- [ ] Complete FAQ
+- [ ] Record three-minute YouTube demo
+- [ ] Draft Reddit technical post
+- [ ] Draft Hackaday or Hackster article
+
+Exit criteria: documentation and video prove the kit is real and reproducible.
+
+## Phase 5: Store And Fulfillment Prep
+
+Target window: 2026-08-02 to 2026-08-07
+
+- [ ] Draft Tindie listing
+- [ ] Draft Shopify product page
+- [ ] Decide first-stage payment route
+- [ ] Complete shipping matrix
+- [ ] Complete pricing table
+
+Exit criteria: the product has the assets required for a controlled small-batch listing.
+
+## Phase 6: Small-Batch Test And First Order
+
+Target window: 2026-08-08 to 2026-08-21
+
+- [ ] Prepare 3 to 10 tested units
+- [ ] Run factory test on every unit
+- [ ] Invite beta users
+- [ ] Publish content to GitHub, YouTube, Reddit, and Hackaday
+- [ ] Open Tindie listing
+- [ ] Receive first real overseas order
+
+Exit criteria: the project receives its first real overseas order.
