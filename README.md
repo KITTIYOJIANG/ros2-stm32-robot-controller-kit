@@ -92,6 +92,8 @@ Planned software blocks:
 - ROS2 package for publishing sensor data and receiving wheel commands
 - Examples for basic motor control, IMU reading, and ROS2 integration
 
+The Python SDK skeleton starts in [sdk/python/README.md](sdk/python/README.md).
+
 ## Buy Link
 
 Not available yet. First public sales target: small-batch developer kits through Tindie after hardware, firmware, tests, documentation, and fulfillment checks are complete.
