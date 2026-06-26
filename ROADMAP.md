@@ -21,7 +21,7 @@ Exit criteria: an outside developer can understand what the project is, who it i
 Target window: 2026-06-29 to 2026-07-05
 
 - [ ] Expand README with real demo evidence
-- [ ] Add hardware overview document
+- [x] Add hardware overview document
 - [ ] Add firmware overview document
 - [ ] Add first troubleshooting draft
 - [ ] Add initial demo GIF or screen recording

@@ -65,6 +65,8 @@ Current planned flow:
 
 ## Hardware Overview
 
+The first hardware architecture draft lives in [docs/hardware_overview.md](docs/hardware_overview.md).
+
 Planned hardware blocks:
 
 - STM32 MCU minimum system
