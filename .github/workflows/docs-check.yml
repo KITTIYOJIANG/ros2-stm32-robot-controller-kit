@@ -1,0 +1,54 @@
+name: Documentation Link Smoke Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check required documentation files
+        run: |
+          test -f README.md
+          test -f ROADMAP.md
+          test -f docs/quick_start.md
+          test -f docs/hardware_overview.md
+          test -f docs/firmware_overview.md
+          test -f docs/api_reference.md
+          test -f docs/troubleshooting.md
+          test -f docs/datasheet.md
+          test -f docs/faq.md
+          test -f store/pricing.md
+          test -f store/shipping_matrix.csv
+          test -f ops/fulfillment_sop.md
+          test -f tools/factory_test.py
+          test -f firmware/README.md
+          test -f sdk/python/README.md
+          test -f ros2/robot_controller/README.md
+
+      - name: Check CSV can be parsed by Python
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+
+          path = Path("store/shipping_matrix.csv")
+          rows = list(csv.DictReader(path.open(newline="", encoding="utf-8")))
+          assert rows, "shipping_matrix.csv must contain rows"
+          required = {
+              "Country",
+              "Region",
+              "Shipping Provider",
+              "Shipping Cost (USD)",
+              "Risk Level",
+              "Ship Or Block",
+          }
+          missing = required - set(rows[0])
+          assert not missing, f"missing columns: {sorted(missing)}"
+          print(f"shipping matrix rows: {len(rows)}")
+          PY
