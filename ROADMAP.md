@@ -27,6 +27,7 @@ Target window: 2026-06-29 to 2026-07-05
 - [x] Add API reference draft
 - [x] Add FAQ draft
 - [x] Add shipping and returns draft
+- [x] Add GitHub Actions smoke checks
 - [ ] Add initial demo GIF or screen recording
 
 Exit criteria: an overseas developer would be willing to star or watch the repository.
@@ -54,7 +55,8 @@ Target window: 2026-07-15 to 2026-07-24
 - [ ] Add one-command build and flash flow
 - [x] Add Python SDK mock skeleton
 - [ ] Add Python SDK real serial validation
-- [ ] Add ROS2 package
+- [x] Add ROS2 package mock skeleton
+- [ ] Add ROS2 package real workspace validation
 - [ ] Run one full end-to-end demo
 
 Exit criteria: a developer can control the board from code and reproduce at least one demo.

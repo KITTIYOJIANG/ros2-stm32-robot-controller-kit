@@ -1,0 +1,8 @@
+robot_controller_node:
+  ros__parameters:
+    port: "/dev/ttyUSB0"
+    baudrate: 115200
+    mock: true
+    publish_rate_hz: 20.0
+    command_timeout_ms: 500
+    frame_id: "imu_link"

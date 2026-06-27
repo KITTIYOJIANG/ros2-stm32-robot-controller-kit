@@ -1,0 +1,46 @@
+name: Python and Firmware Skeleton Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-and-firmware:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Python SDK tests
+        env:
+          PYTHONPATH: sdk/python
+        run: |
+          python -m unittest discover -s sdk/python/tests
+
+      - name: Run SDK mock example
+        env:
+          PYTHONPATH: sdk/python
+        run: |
+          python sdk/python/examples/mock_smoke_test.py
+
+      - name: Run factory test in mock mode
+        run: |
+          python tools/factory_test.py \
+            --mock \
+            --order CI-MOCK \
+            --board-id CI-MOCK-BOARD \
+            --operator GitHubActions \
+            --output-dir /tmp/factory_test_log
+
+      - name: Compile firmware protocol skeleton
+        run: |
+          gcc -std=c99 -Wall -Wextra -pedantic \
+            -I firmware \
+            -c firmware/App/protocol.c \
+            -o /tmp/protocol.o

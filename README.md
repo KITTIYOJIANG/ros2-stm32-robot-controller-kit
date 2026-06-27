@@ -93,6 +93,7 @@ Planned software blocks:
 - Examples for basic motor control, IMU reading, and ROS2 integration
 
 The Python SDK skeleton starts in [sdk/python/README.md](sdk/python/README.md).
+The ROS2 package skeleton starts in [ros2/robot_controller/README.md](ros2/robot_controller/README.md).
 
 ## Buy Link
 
