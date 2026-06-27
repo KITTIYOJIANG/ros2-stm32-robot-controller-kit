@@ -111,6 +111,9 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Shipping Matrix](store/shipping_matrix.csv)
 - [Fulfillment SOP](ops/fulfillment_sop.md)
 - [Factory Test Script](tools/factory_test.py)
+- [Physical Action Checklist](ops/physical_action_checklist.md)
+- [Bring-Up BOM](hardware/bom/bringup_bom_v0.1.csv)
+- [Supplier List](ops/supplier_list.csv)
 
 ## Content Drafts
 

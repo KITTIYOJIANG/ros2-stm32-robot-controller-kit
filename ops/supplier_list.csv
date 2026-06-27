@@ -1,0 +1,9 @@
+Supplier,Region,Use Case,Website,Status,Notes
+STMicroelectronics,Global,Official STM32 boards and tools,https://www.st.com,Candidate,Use official pages for reference and documentation
+DigiKey,Global,Electronic components and MPN lookup,https://www.digikey.com,Candidate,Use for MPN based BOM validation
+Mouser,Global,Electronic components and MPN lookup,https://www.mouser.com,Candidate,Use for alternate component sourcing
+LCSC,Global,PCB assembly component sourcing,https://www.lcsc.com,Candidate,Useful when moving toward JLCPCB assembly
+JLCPCB,Global,PCB fabrication and assembly,https://jlcpcb.com,Candidate,Use later after schematic and PCB are ready
+Pololu,United States,Motor drivers and robotics modules,https://www.pololu.com,Candidate,Useful for low-power motor driver validation
+SparkFun,United States,Sensors and breakout boards,https://www.sparkfun.com,Candidate,Useful for IMU breakout validation
+Adafruit,United States,Sensors cables and prototyping modules,https://www.adafruit.com,Candidate,Useful for prototyping if stock and shipping are acceptable
