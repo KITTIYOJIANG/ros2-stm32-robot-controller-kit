@@ -71,8 +71,8 @@ Target window: 2026-07-25 to 2026-08-01
 - [ ] Complete troubleshooting guide
 - [ ] Complete FAQ
 - [ ] Record three-minute YouTube demo
-- [ ] Draft Reddit technical post
-- [ ] Draft Hackaday or Hackster article
+- [x] Draft Reddit technical post
+- [x] Draft Hackaday or Hackster article
 
 Exit criteria: documentation and video prove the kit is real and reproducible.
 
