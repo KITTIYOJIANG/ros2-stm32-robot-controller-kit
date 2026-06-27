@@ -112,6 +112,11 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Fulfillment SOP](ops/fulfillment_sop.md)
 - [Factory Test Script](tools/factory_test.py)
 
+## Content Drafts
+
+- [Reddit Technical Post Draft](content/reddit_post.md)
+- [Hackaday / Hackster Article Draft](content/hackaday_article.md)
+
 ## Safety And Compliance Notes
 
 This is a developer kit for prototyping and education. It is not a certified consumer appliance. Do not claim CE or FCC certification until certification has been completed. Use it in a safe lab environment and avoid selling untested boards as ready stock.
