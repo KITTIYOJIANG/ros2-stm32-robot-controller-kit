@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/KITTIYOJIANG/ros2-stm32-robot-controller-kit#readme
+    about: Read the project documentation before opening a support issue.

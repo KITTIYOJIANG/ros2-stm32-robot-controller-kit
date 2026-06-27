@@ -28,6 +28,7 @@ Target window: 2026-06-29 to 2026-07-05
 - [x] Add FAQ draft
 - [x] Add shipping and returns draft
 - [x] Add GitHub Actions smoke checks
+- [x] Add GitHub issue and pull request templates
 - [ ] Add initial demo GIF or screen recording
 
 Exit criteria: an overseas developer would be willing to star or watch the repository.
