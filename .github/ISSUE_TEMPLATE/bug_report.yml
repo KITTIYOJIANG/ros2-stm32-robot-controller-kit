@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible software, firmware, SDK, or ROS2 issue.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for reproducible bugs. If the issue involves wiring, power, flashing, or a physical board, use the hardware support template instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken?
+      placeholder: The Python SDK connects, but READ_IMU returns an unexpected response.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include exact commands.
+      placeholder: |
+        1. Flash firmware version ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: firmware_version
+    attributes:
+      label: Firmware version
+      placeholder: "0.1.0"
+    validations:
+      required: false
+  - type: input
+    id: sdk_version
+    attributes:
+      label: Python SDK version or commit
+      placeholder: "0.1.0 or git commit"
+    validations:
+      required: false
+  - type: input
+    id: ros2_version
+    attributes:
+      label: ROS2 distribution
+      placeholder: "Humble, Iron, Jazzy, etc."
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Ubuntu 22.04, Windows 11, macOS 14"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and terminal output
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submit checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I included exact commands or logs.
+          required: true
+        - label: I am not reporting a physical wiring or power issue here.
+          required: false

@@ -1,0 +1,106 @@
+name: Hardware support
+description: Get help with board detection, flashing, wiring, motors, sensors, or factory test.
+title: "[Hardware]: "
+labels: ["hardware", "support", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This kit is a developer kit for lab prototyping. Do not connect motor power until voltage and polarity are confirmed.
+  - type: textarea
+    id: issue
+    attributes:
+      label: What are you trying to do?
+      placeholder: I am trying to flash firmware, run factory test, read IMU data, or move motors.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Issue category
+      options:
+        - Board not detected
+        - Flash failed
+        - Serial permission denied
+        - No sensor data
+        - Motor not moving
+        - ROS2 node not publishing
+        - Docker cannot access USB
+        - Firmware version mismatch
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: board_revision
+    attributes:
+      label: Board revision
+      placeholder: "v0.1, prototype, unknown"
+    validations:
+      required: true
+  - type: input
+    id: firmware_version
+    attributes:
+      label: Firmware version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host computer
+      placeholder: "Laptop, Raspberry Pi 4, Jetson, mini PC"
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Ubuntu 22.04, Windows 11, macOS 14"
+    validations:
+      required: true
+  - type: input
+    id: serial_port
+    attributes:
+      label: Serial port
+      placeholder: "/dev/ttyUSB0, /dev/ttyACM0, COM3"
+    validations:
+      required: false
+  - type: input
+    id: power
+    attributes:
+      label: Power supply setup
+      placeholder: "USB only, 12 V bench supply current-limited to 0.5 A"
+    validations:
+      required: true
+  - type: textarea
+    id: wiring
+    attributes:
+      label: Wiring notes
+      description: Describe motors, motor driver, IMU, encoders, ST-Link, and power wiring.
+    validations:
+      required: false
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands and output
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
+      description: Attach clear photos of wiring, board top, board bottom, and power setup when relevant.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checklist
+      options:
+        - label: I checked power polarity and voltage before connecting motor power.
+          required: true
+        - label: I kept wheels lifted or motors unloaded for first motion tests.
+          required: false
+        - label: I understand this is a developer kit, not a certified consumer appliance.
+          required: true
