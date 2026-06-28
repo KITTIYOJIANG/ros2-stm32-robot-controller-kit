@@ -115,6 +115,7 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Factory Test Script](tools/factory_test.py)
 - [Local Smoke Check](tools/local_smoke_check.py)
 - [Physical Action Checklist](ops/physical_action_checklist.md)
+- [Purchase Decision Sheet](ops/purchase_decision_sheet.md)
 - [First Bring-Up Plan](ops/first_bringup_plan.md)
 - [Bring-Up Session Log Template](ops/bringup_session_log_template.md)
 - [Bring-Up BOM](hardware/bom/bringup_bom_v0.1.csv)

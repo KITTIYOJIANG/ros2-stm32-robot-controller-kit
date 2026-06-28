@@ -99,6 +99,7 @@ Do not try to build a complete robot first.
 
 ## Step 4: First Shopping List
 
+Use [purchase_decision_sheet.md](purchase_decision_sheet.md) before choosing listings.
 Use [../hardware/bom/bringup_bom_v0.1.csv](../hardware/bom/bringup_bom_v0.1.csv).
 
 Buy or locate only enough parts for bench validation:
