@@ -14,6 +14,7 @@ Demo evidence will be added as the hardware and firmware stabilize.
 
 - Demo GIF: `media/gifs/demo_placeholder.gif`
 - Demo video: planned
+- Local smoke check evidence: [media/images/local_smoke_check_success.png](media/images/local_smoke_check_success.png)
 - Test log: planned
 
 ## Features

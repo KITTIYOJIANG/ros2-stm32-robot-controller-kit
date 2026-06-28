@@ -53,6 +53,10 @@ Pass criteria:
 - [ ] SDK tests pass.
 - [ ] SDK mock example passes.
 
+Evidence captured:
+
+- [Local smoke check success screenshot](../media/images/local_smoke_check_success.png)
+
 ## Safety Gates
 
 Do not move to the next stage until the current stage passes.
