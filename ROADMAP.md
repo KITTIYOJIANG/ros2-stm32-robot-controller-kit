@@ -38,6 +38,8 @@ Exit criteria: an overseas developer would be willing to star or watch the repos
 Target window: 2026-07-06 to 2026-07-14
 
 - [x] Draft physical action checklist
+- [x] Draft first bring-up plan
+- [x] Draft bring-up session log template
 - [x] Draft bring-up BOM
 - [x] Draft supplier list
 - [ ] Export schematic PDF

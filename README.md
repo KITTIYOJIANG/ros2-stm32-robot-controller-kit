@@ -112,6 +112,8 @@ Not available yet. First public sales target: small-batch developer kits through
 - [Fulfillment SOP](ops/fulfillment_sop.md)
 - [Factory Test Script](tools/factory_test.py)
 - [Physical Action Checklist](ops/physical_action_checklist.md)
+- [First Bring-Up Plan](ops/first_bringup_plan.md)
+- [Bring-Up Session Log Template](ops/bringup_session_log_template.md)
 - [Bring-Up BOM](hardware/bom/bringup_bom_v0.1.csv)
 - [Supplier List](ops/supplier_list.csv)
 
