@@ -3,7 +3,7 @@ MCU Development,STM32 development board,NUCLEO-F446RE,1,Must Have,TBD,TBD,Offici
 Debug,STM32 programmer debugger,STLINK-V3MINIE,1,Should Have,TBD,TBD,Official ST page,https://www.st.com/en/development-tools/stlink-v3minie.html,Candidate,Needed if selected board lacks onboard debugger or for custom PCB later
 Motor Driver,Dual low-power DC motor driver,Pololu TB6612FNG carrier,1,Must Have,TBD,TBD,Vendor product page,https://www.pololu.com/product/713,Candidate,For low-power bench motor validation only
 Motor,Small DC gear motor with encoder,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Choose low-current motors for safe bench testing
-Sensor,IMU breakout,SparkFun ICM-20948 Qwiic,1,Should Have,TBD,TBD,Vendor product page,https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html,Candidate,Verify stock or choose alternate IMU before buying
+Sensor,IMU breakout,SparkFun ICM-20948 Qwiic,1,Should Have,TBD,TBD,Vendor product page,https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html,Candidate,Official product page showed out of stock on 2026-06-28; verify stock or choose alternate IMU before buying
 Power,Current-limited bench power supply,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Do not test motors without current limit
 Measurement,Digital multimeter,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Required before applying motor power
 Wiring,Jumper wire kit,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Prefer reliable female-female and male-female wires
