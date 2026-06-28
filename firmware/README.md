@@ -16,6 +16,8 @@ firmware/
     version.h
   Drivers/
     motor_driver.h
+  Targets/
+    stm32f103c8t6_minimal/
 ```
 
 ## Why This Structure Exists
@@ -65,11 +67,19 @@ Firmware should follow these rules:
 
 ## Build Status
 
-No firmware build is available yet. The next milestone is a minimal STM32 project that can:
+The first hardware target is available at:
+
+```text
+firmware/Targets/stm32f103c8t6_minimal
+```
+
+It is a bare-metal STM32F103C8T6 bring-up firmware that can:
 
 1. Blink an LED.
-2. Print firmware version over serial.
+2. Return firmware version over USART1.
 3. Reply to `PING`.
 4. Reply to `GET_VERSION`.
 5. Stop motors by default.
+
+It does not implement motor, IMU, encoder, ROS2, or USB CDC behavior yet. Use it only for the first board power, flash, LED, UART, and protocol check.
 

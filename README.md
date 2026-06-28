@@ -83,6 +83,7 @@ Planned hardware blocks:
 
 The first firmware architecture draft lives in [docs/firmware_overview.md](docs/firmware_overview.md).
 The firmware skeleton starts in [firmware/README.md](firmware/README.md).
+The first C8T6 bring-up firmware target lives in [firmware/Targets/stm32f103c8t6_minimal](firmware/Targets/stm32f103c8t6_minimal).
 The draft interface contract lives in [docs/api_reference.md](docs/api_reference.md).
 
 Planned software blocks:

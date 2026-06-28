@@ -80,6 +80,13 @@ Checks:
 5. Check whether the board uses native USB or a USB-UART bridge.
 6. Install the required USB-UART or ST-Link driver if needed.
 
+For the STM32F103C8T6 minimal target:
+
+- ST-LINK/V2-compatible SWD can flash the board but usually does not create a serial port.
+- The firmware serial test uses USART1 on PA9 and PA10.
+- Use a USB-UART adapter or a debugger that explicitly provides a virtual COM port.
+- The Blue Pill USB connector will not act as USB CDC serial for this minimal firmware.
+
 Linux checks:
 
 ```bash
@@ -130,7 +137,7 @@ Checks:
 Planned command:
 
 ```bash
-cd firmware
+cd firmware/Targets/stm32f103c8t6_minimal
 make flash
 ```
 

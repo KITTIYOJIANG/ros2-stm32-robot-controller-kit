@@ -92,10 +92,29 @@ ros2 --version
 
 ## 3. Flash Firmware
 
-From the repository root:
+Current minimal C8T6 target:
+
+```text
+firmware/Targets/stm32f103c8t6_minimal
+```
+
+Build on Windows PowerShell:
+
+```powershell
+cd firmware\Targets\stm32f103c8t6_minimal
+.\build.ps1
+```
+
+Build with Make:
 
 ```bash
-cd firmware
+cd firmware/Targets/stm32f103c8t6_minimal
+make
+```
+
+Flash with OpenOCD:
+
+```bash
 make flash
 ```
 
@@ -117,6 +136,16 @@ If the board cannot be flashed:
 - Try a shorter USB cable.
 
 ## 4. Find The Serial Port
+
+For the STM32F103C8T6 minimal target, serial uses USART1:
+
+```text
+PA9  TX -> USB-UART RX
+PA10 RX -> USB-UART TX
+GND     -> USB-UART GND
+```
+
+The cheap ST-LINK/V2-compatible dongle is usually SWD-only. It normally does not create a serial COM port.
 
 Linux:
 
@@ -150,28 +179,21 @@ From the repository root:
 
 ```bash
 cd sdk/python
-python -m pip install -e .
+python -m pip install -e ".[serial]"
+cd ../..
 ```
 
-Planned smoke test:
+Minimal C8T6 smoke test:
 
-```python
-from robot_controller import RobotController
-
-board = RobotController("/dev/ttyUSB0")
-board.set_motor_speed(0.3, 0.3)
-print(board.read_imu())
-board.stop()
+```bash
+python tools/c8t6_minimal_smoke.py --port /dev/ttyUSB0
 ```
 
 Expected output:
 
 ```text
-Connected to robot controller
-Firmware version: 0.1.0
-Motor command accepted
-IMU: ax=..., ay=..., az=..., gx=..., gy=..., gz=...
-Motors stopped
+ping: PASS
+version: VersionInfo(firmware='0.1.0', protocol='0.1', board='stm32_robot_controller')
 ```
 
 ## 6. Run The ROS2 Demo
