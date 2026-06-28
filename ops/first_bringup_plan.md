@@ -31,15 +31,20 @@ Out of scope for the first session:
 Required repository checks:
 
 ```bash
-python tools/factory_test.py --mock --order LOCAL-PRECHECK
+python tools/local_smoke_check.py
 ```
 
-From PowerShell:
+Run it from the repository root:
 
 ```powershell
-$env:PYTHONPATH="D:\Projects\Business\Products\empire\oversea\sdk\python"
-python -m unittest discover -s sdk/python/tests
-python sdk/python/examples/mock_smoke_test.py
+cd <repo-root>
+python tools/local_smoke_check.py
+```
+
+Or run it from any directory by passing the script path:
+
+```powershell
+python <repo-root>\tools\local_smoke_check.py
 ```
 
 Pass criteria:
@@ -190,4 +195,3 @@ The bring-up phase is ready to move forward when:
 - [ ] Mock tests still pass.
 - [ ] The next missing firmware command is explicit.
 - [ ] You have not connected motor power prematurely.
-
