@@ -1,0 +1,15 @@
+Category,Item,Example Candidate,Qty,Priority,Owned Or Need To Buy,Approx Unit Cost USD,Source Type,Reference URL,Decision Status,Notes
+MCU Development,STM32 development board,NUCLEO-F446RE,1,Must Have,TBD,TBD,Official ST page,https://www.st.com/en/evaluation-tools/nucleo-f446re.html,Candidate,Use dev board before custom PCB
+Debug,STM32 programmer debugger,STLINK-V3MINIE,1,Should Have,TBD,TBD,Official ST page,https://www.st.com/en/development-tools/stlink-v3minie.html,Candidate,Needed if selected board lacks onboard debugger or for custom PCB later
+Motor Driver,Dual low-power DC motor driver,Pololu TB6612FNG carrier,1,Must Have,TBD,TBD,Vendor product page,https://www.pololu.com/product/713,Candidate,For low-power bench motor validation only
+Motor,Small DC gear motor with encoder,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Choose low-current motors for safe bench testing
+Sensor,IMU breakout,SparkFun ICM-20948 Qwiic,1,Should Have,TBD,TBD,Vendor product page,https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html,Candidate,Verify stock or choose alternate IMU before buying
+Power,Current-limited bench power supply,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Do not test motors without current limit
+Measurement,Digital multimeter,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Required before applying motor power
+Wiring,Jumper wire kit,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Prefer reliable female-female and male-female wires
+Wiring,Breadboard or terminal block,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for controlled bench wiring
+Cable,USB data cable set,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Avoid charge-only cable
+Safety,Anti-static bag or mat,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Useful for storage and handling
+Debug,USB logic analyzer,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Research,Useful for UART I2C SPI debugging
+Packaging,Labels or tape,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for board ID and cable labels
+Documentation,Quick Start card prototype,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Later,Prepare after first demo flow stabilizes
