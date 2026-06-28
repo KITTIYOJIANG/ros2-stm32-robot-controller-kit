@@ -1,15 +1,15 @@
-Category,Item,Example Candidate,Qty,Priority,Owned Or Need To Buy,Approx Unit Cost USD,Source Type,Reference URL,Decision Status,Notes
-MCU Development,STM32 development board,NUCLEO-F446RE,1,Must Have,TBD,TBD,Official ST page,https://www.st.com/en/evaluation-tools/nucleo-f446re.html,Candidate,Use dev board before custom PCB
-Debug,STM32 programmer debugger,STLINK-V3MINIE,1,Should Have,TBD,TBD,Official ST page,https://www.st.com/en/development-tools/stlink-v3minie.html,Candidate,Needed if selected board lacks onboard debugger or for custom PCB later
-Motor Driver,Dual low-power DC motor driver,Pololu TB6612FNG carrier,1,Must Have,TBD,TBD,Vendor product page,https://www.pololu.com/product/713,Candidate,For low-power bench motor validation only
-Motor,Small DC gear motor with encoder,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Choose low-current motors for safe bench testing
-Sensor,IMU breakout,SparkFun ICM-20948 Qwiic,1,Should Have,TBD,TBD,Vendor product page,https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html,Candidate,Official product page showed out of stock on 2026-06-28; verify stock or choose alternate IMU before buying
-Power,Current-limited bench power supply,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Do not test motors without current limit
-Measurement,Digital multimeter,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Required before applying motor power
-Wiring,Jumper wire kit,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Prefer reliable female-female and male-female wires
-Wiring,Breadboard or terminal block,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for controlled bench wiring
-Cable,USB data cable set,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Avoid charge-only cable
-Safety,Anti-static bag or mat,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Useful for storage and handling
-Debug,USB logic analyzer,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Research,Useful for UART I2C SPI debugging
-Packaging,Labels or tape,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for board ID and cable labels
-Documentation,Quick Start card prototype,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Later,Prepare after first demo flow stabilizes
+Category,Item,Example Candidate,Qty,Priority,Owned Or Need To Buy,Approx Unit Cost USD,Source Type,Reference URL,Decision Status,Notes,Image Path,Image Status
+MCU Development,STM32 development board,STM32F103C8T6 Blue Pill-compatible development board,1,Must Have,TBD,TBD,Local marketplace or verified vendor,TBD,Candidate,"Low-cost first board requested by user; verify it uses STM32F103C8T6 or a clearly compatible clone, 3.3 V logic, SWD pins, BOOT0 and RESET access, and a reliable USB data path",TBD,Needs exact product selection before image can be added
+Debug,STM32 programmer debugger,ST-LINK/V2 compatible USB dongle,1,Must Have,TBD,TBD,Local marketplace or verified vendor,TBD,Candidate,"Lower-cost option than STLINK-V3MINIE; recommended for Blue Pill-compatible boards; verify SWD pinout, target voltage, driver compatibility, and do not connect 5 V to 3.3 V target pins",media/images/bom/stlink_v2_compatible.png,Provided image; verify clone pinout and voltage before use
+Motor Driver,Dual low-power DC motor driver,Pololu TB6612FNG carrier,1,Must Have,TBD,TBD,Vendor product page,https://www.pololu.com/product/713,Candidate,For low-power bench motor validation only,media/images/bom/tb6612fng_carrier.png,Provided image
+Motor,Small DC gear motor with encoder,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Choose low-current motors for safe bench testing,TBD,Needs exact product selection before image can be added
+Sensor,IMU breakout,SparkFun ICM-20948 Qwiic,1,Should Have,TBD,TBD,Vendor product page,https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html,Candidate,Official product page showed out of stock on 2026-06-28; verify stock or choose alternate IMU before buying,TBD,Needs replacement candidate or stock confirmation before image can be finalized
+Power,Current-limited bench power supply,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Do not test motors without current limit,TBD,Needs exact product selection before image can be added
+Measurement,Digital multimeter,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Required before applying motor power,TBD,Needs exact product selection before image can be added
+Wiring,Jumper wire kit,TBD,1,Must Have,TBD,TBD,TBD,TBD,Need Research,Prefer reliable female-female and male-female wires,TBD,Needs exact product selection before image can be added
+Wiring,Breadboard or terminal block,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for controlled bench wiring,TBD,Needs exact product selection before image can be added
+Cable,USB data cable set,TBD,2,Must Have,TBD,TBD,TBD,TBD,Need Research,Avoid charge-only cable,TBD,Needs exact product selection before image can be added
+Safety,Anti-static bag or mat,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Useful for storage and handling,TBD,Needs exact product selection before image can be added
+Debug,USB logic analyzer,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Research,Useful for UART I2C SPI debugging,TBD,Needs exact product selection before image can be added
+Packaging,Labels or tape,TBD,1,Should Have,TBD,TBD,TBD,TBD,Need Research,Use for board ID and cable labels,TBD,Needs exact product selection before image can be added
+Documentation,Quick Start card prototype,TBD,1,Optional,TBD,TBD,TBD,TBD,Need Later,Prepare after first demo flow stabilizes,TBD,Needs exact product selection before image can be added

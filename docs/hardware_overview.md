@@ -59,9 +59,27 @@ Early requirements:
 - SWD for flashing and debug
 - GPIO for enable pins, LEDs, and test points
 
+Current prototype assumption:
+
+```text
+STM32F103C8T6 Blue Pill-compatible board
+```
+
+Reason:
+
+- Lower first hardware cost than a Nucleo board.
+- Easy to replace if a wiring or bring-up mistake damages the board.
+- Good enough for early protocol, UART or USB CDC, GPIO, PWM, and simple sensor validation.
+
+Constraints:
+
+- Treat this as a bench prototype path, not the final product MCU decision.
+- Flash, RAM, timer channels, USB behavior, and clone quality must be checked before promising a product spec.
+- Use an ST-LINK/V2 compatible SWD programmer unless the selected board has a proven onboard/debug boot path.
+
 Open decisions:
 
-- [ ] Final STM32 family
+- [ ] Final STM32 family after C8T6 bench validation
 - [ ] Final package
 - [ ] Flash and RAM size
 - [ ] USB native or USB-UART bridge

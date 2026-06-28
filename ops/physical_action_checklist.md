@@ -10,8 +10,8 @@ These actions are safe to start before PCB design:
 
 1. Prepare a clean electronics bench.
 2. Confirm basic test tools.
-3. Buy or locate a known STM32 development board.
-4. Buy or locate a programmer/debugger.
+3. Buy or locate a known STM32F103C8T6 Blue Pill-compatible development board.
+4. Buy or locate an ST-LINK/V2 compatible programmer/debugger.
 5. Buy low-power motor test parts.
 6. Prepare a small sensor and wiring kit.
 7. Create a physical evidence habit: photos, logs, labels, and test folders.
@@ -60,7 +60,8 @@ Use a development board before designing a custom PCB.
 Recommended path:
 
 ```text
-STM32 Nucleo board
+STM32F103C8T6 Blue Pill-compatible board
+  -> ST-LINK/V2 compatible SWD programmer
   -> serial protocol
   -> Python SDK real serial test
   -> motor driver module
@@ -72,9 +73,14 @@ STM32 Nucleo board
 
 Reason:
 
-- The Nucleo board reduces early hardware risk.
-- The built-in debugger on many Nucleo boards reduces wiring complexity.
+- The Blue Pill-compatible path keeps first hardware cost low.
+- The ST-LINK/V2 compatible programmer gives a repeatable flash/debug path.
 - Firmware and host protocol can be validated before custom PCB cost.
+
+Tradeoff:
+
+- This path has more wiring and clone-quality risk than a Nucleo board.
+- Verify chip marking, SWD pin labels, BOOT0, RESET, USB data behavior, and 3.3 V logic before applying power to external modules.
 
 ## Step 3: First Physical Demo Target
 
@@ -97,8 +103,8 @@ Use [../hardware/bom/bringup_bom_v0.1.csv](../hardware/bom/bringup_bom_v0.1.csv)
 
 Buy or locate only enough parts for bench validation:
 
-- 1 STM32 development board
-- 1 programmer/debugger if not already onboard
+- 1 STM32F103C8T6 Blue Pill-compatible development board
+- 1 ST-LINK/V2 compatible programmer/debugger
 - 1 low-power motor driver module
 - 2 small DC gear motors
 - 1 IMU breakout

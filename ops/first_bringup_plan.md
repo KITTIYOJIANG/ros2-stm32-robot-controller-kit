@@ -4,6 +4,16 @@ Goal: define the first safe physical bring-up session for the ROS2-Compatible ST
 
 > Status: execution plan. Use this after you have the bench parts from `hardware/bom/bringup_bom_v0.1.csv`. Do not connect motor power until the safety gates below pass.
 
+Current board assumption:
+
+```text
+STM32F103C8T6 Blue Pill-compatible development board
+  -> ST-LINK/V2 compatible SWD programmer
+  -> USB or UART serial protocol
+```
+
+Note: `STM32C8T6` is treated here as the common shorthand for `STM32F103C8T6`. Verify the exact marking on the chip or vendor listing before buying.
+
 ## Scope
 
 This plan is for the first bench session with a development board, not a custom PCB.
@@ -12,7 +22,7 @@ Primary target:
 
 ```text
 Host computer
-  -> STM32 development board
+  -> STM32F103C8T6 Blue Pill-compatible board
   -> serial command path
   -> Python SDK real serial path
   -> factory test log habit
@@ -83,6 +93,8 @@ Do not move to the next stage until the current stage passes.
 - [ ] Port name is recorded.
 - [ ] Firmware flash method is identified.
 - [ ] No motor driver is connected yet.
+- [ ] ST-LINK/V2 compatible pinout is verified before connecting SWDIO, SWCLK, GND, VTREF or 3.3 V, and NRST.
+- [ ] No 5 V programmer pin is connected to a 3.3 V target logic pin.
 
 ### Gate 4: Protocol Path
 
@@ -113,12 +125,13 @@ Motor test is allowed only after:
 Do this first:
 
 1. Photograph the bench before connecting anything.
-2. Connect STM32 development board over USB.
-3. Record board name and serial/debug device.
-4. Run repository mock checks.
-5. Identify firmware flashing path.
-6. Record what blocks real serial validation.
-7. Fill `ops/bringup_session_log_template.md`.
+2. Inspect the STM32F103C8T6 board marking, BOOT0 jumper, RESET button, USB connector, and SWD pins.
+3. Connect the board over USB only, or connect ST-LINK/V2 compatible SWD only after checking pin labels.
+4. Record board name and serial/debug device.
+5. Run repository mock checks.
+6. Identify firmware flashing path.
+7. Record what blocks real serial validation.
+8. Fill `ops/bringup_session_log_template.md`.
 
 Expected result:
 
@@ -194,6 +207,7 @@ Record the stop condition in the session log.
 The bring-up phase is ready to move forward when:
 
 - [ ] You know which STM32 board path is being used.
+- [ ] The chip marking or vendor listing confirms STM32F103C8T6 or a known compatible clone.
 - [ ] You know the real serial or debug port.
 - [ ] You have at least one session log.
 - [ ] Mock tests still pass.

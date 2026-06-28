@@ -68,6 +68,7 @@ Current planned flow:
 ## Hardware Overview
 
 The first hardware architecture draft lives in [docs/hardware_overview.md](docs/hardware_overview.md).
+Current bench bring-up path: STM32F103C8T6 Blue Pill-compatible board plus ST-LINK/V2 compatible SWD programmer.
 
 Planned hardware blocks:
 
@@ -117,6 +118,7 @@ Not available yet. First public sales target: small-batch developer kits through
 - [First Bring-Up Plan](ops/first_bringup_plan.md)
 - [Bring-Up Session Log Template](ops/bringup_session_log_template.md)
 - [Bring-Up BOM](hardware/bom/bringup_bom_v0.1.csv)
+- [Bring-Up BOM Gallery](hardware/bom/bringup_bom_gallery.md)
 - [Supplier List](ops/supplier_list.csv)
 
 ## Content Drafts
