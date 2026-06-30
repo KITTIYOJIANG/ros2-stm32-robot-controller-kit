@@ -16,6 +16,31 @@ Target board:
 STM32F103C8T6 Blue Pill-compatible development board
 ```
 
+## Required Bench Parts
+
+Minimum parts for this stage:
+
+| Priority | Item | Qty | Why It Is Needed |
+| --- | --- | ---: | --- |
+| Must | STM32F103C8T6 Blue Pill-compatible board | 1-2 | Main test board; buy 2 if low cost so one can be a spare |
+| Must | ST-LINK/V2-compatible programmer | 1 | SWD flashing and debug through STM32CubeIDE |
+| Must | USB-UART adapter, 3.3 V logic | 1 | Serial `PING` and `GET_VERSION` test on PA9/PA10 |
+| Must | USB data cables | 2 | One for ST-LINK, one for USB-UART or board power |
+| Must | Female-female jumper wires | 1 kit | SWD and UART wiring |
+| Must | Digital multimeter | 1 | Check 3.3 V, GND continuity, and avoid wrong voltage |
+| Should | Breadboard or non-conductive base | 1 | Keeps the board and wires stable during bring-up |
+| Should | Labels or tape | 1 | Mark SWD, UART, and board ID during testing |
+
+Do not buy or connect these for the first flash test:
+
+- TB6612FNG motor driver
+- DC motors
+- Motor battery or high-current supply
+- IMU module
+- Encoder wiring
+
+Those parts start after LED blink and serial `PING` pass.
+
 Default pins:
 
 | Function | STM32 Pin | Blue Pill Label | Notes |
@@ -63,6 +88,32 @@ ERROR code=0x0001 name=ERR_BAD_COMMAND message="unknown command"
 ```
 
 The firmware does not print an unsolicited boot banner. That keeps Python SDK request/response reads deterministic.
+
+## STM32CubeIDE Path
+
+Use STM32CubeIDE for the first flash/debug workflow. Keil is not required.
+
+Recommended beginner flow:
+
+1. Install STM32CubeIDE.
+2. Connect ST-LINK/V2-compatible programmer to the C8T6 board.
+3. Open STM32CubeIDE.
+4. Create or import an STM32F103C8Tx project.
+5. Use the code in this target as the minimal firmware reference.
+6. Build inside STM32CubeIDE.
+7. Flash/debug through ST-LINK.
+8. Confirm PC13 LED blinks.
+9. Connect USB-UART and run the serial smoke test.
+
+Key CubeIDE target choice:
+
+```text
+MCU: STM32F103C8Tx
+Debug interface: ST-LINK / SWD
+Build goal: Debug or Release
+```
+
+If STM32CubeIDE creates its own startup file and linker script, keep the CubeIDE-generated startup/linker files and port the logic from `src/main.c`. Do not duplicate vector tables or linker scripts in the same CubeIDE project.
 
 ## Build On Windows PowerShell
 

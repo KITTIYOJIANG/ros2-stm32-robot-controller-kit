@@ -55,6 +55,7 @@ ops/        Cost table, supplier list, order tracker, factory test logs
 
 The first Quick Start draft lives in [docs/quick_start.md](docs/quick_start.md).
 Common setup and bring-up issues are tracked in [docs/troubleshooting.md](docs/troubleshooting.md).
+The first C8T6 hardware parts checklist lives in [docs/c8t6_bringup_parts.md](docs/c8t6_bringup_parts.md).
 
 Current planned flow:
 

@@ -69,12 +69,19 @@ Python 3.10 or later
 
 ### Firmware Tools
 
-Planned options:
+Use STM32CubeIDE for the first C8T6 flash/debug workflow. Keil is not required.
 
-- STM32CubeCLT or STM32CubeIDE
+Recommended:
+
+- STM32CubeIDE
+- ST-LINK driver
+- USB-UART driver for the selected adapter
+
+Optional command-line tools:
+
+- STM32CubeCLT
 - GNU Arm Embedded Toolchain
 - OpenOCD or STM32CubeProgrammer
-- ST-Link driver
 
 ### ROS2
 
@@ -98,7 +105,19 @@ Current minimal C8T6 target:
 firmware/Targets/stm32f103c8t6_minimal
 ```
 
-Build on Windows PowerShell:
+STM32CubeIDE path:
+
+```text
+Create or import an STM32F103C8Tx project
+-> use ST-LINK / SWD debug
+-> build
+-> run or debug
+-> confirm PC13 LED blink
+```
+
+If STM32CubeIDE generates its own startup file and linker script, keep those generated files and port the logic from the target `src/main.c`.
+
+Command-line build path:
 
 ```powershell
 cd firmware\Targets\stm32f103c8t6_minimal
