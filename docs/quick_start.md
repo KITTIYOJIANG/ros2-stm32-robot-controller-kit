@@ -108,7 +108,7 @@ firmware/Targets/stm32f103c8t6_minimal
 STM32CubeIDE path:
 
 ```text
-Create or import an STM32F103C8Tx project
+Open or import firmware/CubeIDE_workspace
 -> use ST-LINK / SWD debug
 -> build
 -> run or debug

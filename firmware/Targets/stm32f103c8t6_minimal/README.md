@@ -93,17 +93,22 @@ The firmware does not print an unsolicited boot banner. That keeps Python SDK re
 
 Use STM32CubeIDE for the first flash/debug workflow. Keil is not required.
 
+CubeIDE project location:
+
+```text
+firmware/CubeIDE_workspace
+```
+
 Recommended beginner flow:
 
 1. Install STM32CubeIDE.
 2. Connect ST-LINK/V2-compatible programmer to the C8T6 board.
 3. Open STM32CubeIDE.
-4. Create or import an STM32F103C8Tx project.
-5. Use the code in this target as the minimal firmware reference.
-6. Build inside STM32CubeIDE.
-7. Flash/debug through ST-LINK.
-8. Confirm PC13 LED blinks.
-9. Connect USB-UART and run the serial smoke test.
+4. Import or open the project at `firmware/CubeIDE_workspace`.
+5. Build inside STM32CubeIDE.
+6. Flash/debug through ST-LINK.
+7. Confirm PC13 LED blinks.
+8. Connect USB-UART and run the serial smoke test.
 
 Key CubeIDE target choice:
 
