@@ -124,6 +124,7 @@ Symptoms:
 - STM32CubeProgrammer cannot connect.
 - OpenOCD reports target not found.
 - ST-Link LED shows an error.
+- OpenOCD detects Cortex-M3 but reports `target needs reset`, `Target not halted`, or `failed erasing sectors`.
 
 Checks:
 
@@ -157,6 +158,51 @@ Likely fixes:
 - Lower flash speed.
 - Hold reset while connecting, then release.
 - Try STM32CubeProgrammer if OpenOCD fails.
+
+### OpenOCD Detects C8T6 But Cannot Halt
+
+Known good signs:
+
+```text
+Target voltage: 3.25...
+SWD DPIDR 0x1ba01477
+Cortex-M3 processor detected
+Examination succeed
+```
+
+Problem signs:
+
+```text
+target needs reset
+TARGET: STM32F103C8Tx.cpu - Not halted
+failed erasing sectors
+```
+
+If the board does not expose `RST` or `NRST`, do not use a hard-reset debug mode. In STM32CubeIDE OpenOCD debug settings:
+
+- Do not use `connect_under_reset`.
+- Do not use `reset_config srst_only ... connect_assert_srst`.
+- Prefer a no-reset OpenOCD script or software reset mode.
+- Lower adapter speed to 100 kHz or 240 kHz.
+
+Fallback sequence:
+
+1. Power off the board.
+2. Set `BOOT0 = 1`.
+3. Power on the board.
+4. Connect with OpenOCD or STM32CubeProgrammer in SWD mode.
+5. Erase or program flash.
+6. Power off.
+7. Set `BOOT0 = 0`.
+8. Power on and test LED blink.
+
+If CubeIDE keeps regenerating a hard-reset configuration, use the repository OpenOCD script:
+
+```text
+firmware/Targets/stm32f103c8t6_minimal/flash_openocd.cfg
+```
+
+It avoids the hardware reset line and is safer for Blue Pill-compatible boards without an exposed NRST pin.
 
 ## Serial Permission Denied
 

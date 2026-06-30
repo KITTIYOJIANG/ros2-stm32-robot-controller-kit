@@ -9,4 +9,6 @@ build/
 dist/
 firmware/CubeIDE_workspace/Debug/
 firmware/CubeIDE_workspace/Release/
+firmware/CubeIDE_workspace/*.launch
+firmware/CubeIDE_workspace/* Debug.cfg
 .metadata/
